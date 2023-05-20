@@ -10,8 +10,14 @@ Console.WriteLine("Введите число2");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
 if (num1 > num2)
+{
     Console.WriteLine("max = " + num1);
+}
 else if (num1 == num2)
+{
     Console.WriteLine("значения равны");
+}
 else
+{
     Console.WriteLine("max = " + num2);
+}
