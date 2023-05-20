@@ -20,11 +20,11 @@ if (num1 > num2)
 else if (num2 > num3)
 {
     max = num2;
-Console.WriteLine(max);
+    Console.WriteLine(max);
 }
 else if (num1 == num2 && num2 == num3)
 {
-Console.WriteLine("Числа равны");
+    Console.WriteLine("Числа равны");
 }
 else
 {
