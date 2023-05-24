@@ -1,4 +1,4 @@
-﻿int num = new Random().Next(1, 3);
+﻿int num = new Random().Next(1, 4);
 
 if (num == 1)
     System.Console.WriteLine("Дошик");
