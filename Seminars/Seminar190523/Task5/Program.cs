@@ -9,11 +9,11 @@ Console.WriteLine("Введите целое число");
 int num = Convert.ToInt32(Console.ReadLine());
 
 
-// while (num > 1000)
-// {
-//     num = num / 10;
-//     Console.Write(num % 10);
-// }
+while (num > 1000)
+{
+    num = num / 10;
+    Console.Write(num % 10);
+}
 
 if (num > 1000)
 {

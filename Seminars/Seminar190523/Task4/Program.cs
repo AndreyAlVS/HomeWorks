@@ -14,5 +14,5 @@ count = count + 2;
 }
 if (num1 <= 1)
 {
-   System.Console.Write("Введите поожительное больше единицы"); 
+   System.Console.Write("Введите поожительное больше единицы");
 }
