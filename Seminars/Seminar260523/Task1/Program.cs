@@ -10,18 +10,7 @@
 System.Console.WriteLine("Введите пятизначное число");
 int x = Convert.ToInt32(Console.ReadLine());
 
-int a = x / 1000;
-int b = x % 100;
-
-
-
-
-
-
-
-
-
-
-    System.Console.WriteLine(a);
-
-    System.Console.WriteLine(b);
+if(x / 1000 == x % 100)
+System.Console.WriteLine("yes");
+else
+System.Console.WriteLine("no");
