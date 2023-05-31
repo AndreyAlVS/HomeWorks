@@ -17,16 +17,16 @@ while (count <= N)
 
 
 
-int count2 = 0;
-while (count2 <= N)
-{
-    double dist(int x, int y)
-    {
-        int result = (x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1);
+// int count2 = 0;
+// while (count2 <= N)
+// {
+//     double dist(int x, int y)
+//     {
+//         int result = (x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1);
 
-        double res = Math.Sqrt(result);
-        System.Console.WriteLine(res);
-        return res;
-    }
-}
-dist(x1, y1, x2, y2);
+//         double res = Math.Sqrt(result);
+//         System.Console.WriteLine(res);
+//         return res;
+//     }
+// }
+// dist(x1, y1, x2, y2);
