@@ -12,4 +12,9 @@
 
 System.Console.WriteLine("Введите число");
 int x = Convert.ToInt32(Console.ReadLine());
+int count = 0;
+
+while(count < x)
+
+
 
