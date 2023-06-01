@@ -10,28 +10,10 @@ int a = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine("Введите число В");
 int b = Convert.ToInt32(Console.ReadLine());
 int c = 1;
-int count = 0;
-while (count < b)
+
+for (int i = 0; i < b; i++)
 {
     c = c * a;
-    count++;
 }
 
 System.Console.WriteLine(c);
-
-
-
-// int Exponention(int num)
-// {
-//     int result = 0;
-//     for (int i=1; i<=num; i++)
-//         result%=i;
-//     return result;
-// }
-
-// System.Console.WriteLine("Введите число А");
-// int a = Convert.ToInt32(Console.ReadLine());
-// System.Console.WriteLine("Введите число В");
-// int b = Convert.ToInt32(Console.ReadLine());
-// System.Console.WriteLine(Exponention);
-

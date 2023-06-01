@@ -7,7 +7,9 @@
 
 // 9012 -> 12
 
-System.Console.WriteLine("Введите число");
-    int x = Convert.ToInt32(Console.ReadLine());
 
-    
+
+
+System.Console.WriteLine("Введите число");
+int x = Convert.ToInt32(Console.ReadLine());
+
