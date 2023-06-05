@@ -15,7 +15,7 @@ void PrintArray(int[] array)
     System.Console.WriteLine();
 }
 
-int[] FindNum(int[] array)
+int FindNum(int[] array)
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
@@ -24,11 +24,10 @@ int[] FindNum(int[] array)
             count++;
     }
     return count;
-
 }
 
-
-int[] array = new int[30];
+int[] array = new int[10];
 FillArray(array);
 PrintArray(array);
-PrintArray(FindNum(array));
+FindNum(array);
+System.Console.WriteLine(FindNum(array));
