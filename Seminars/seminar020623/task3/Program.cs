@@ -52,26 +52,26 @@ Max(array);
 
 
 
-int Min(int[] array)
-{
-    int minimum = array[0];
-    for (int i = 1; i < array.Length; i++)
-        if (...)
-        {
-            ...;
-        }
-    return minimum;
-}
+// int Min(int[] array)
+// {
+//     int minimum = array[0];
+//     for (int i = 1; i < array.Length; i++)
+//         if (...)
+//         {
+//             ...;
+//         }
+//     return minimum;
+// }
 
-int Max(int[] array)
-{
-    int maximum = array[0];
-    for (int i = 1; i < array.Length; i++)
-        if (...)
-        {
-            ...;
-        }
-    return maximum;
-}
+// int Max(int[] array)
+// {
+//     int maximum = array[0];
+//     for (int i = 1; i < array.Length; i++)
+//         if (...)
+//         {
+//             ...;
+//         }
+//     return maximum;
+// }
 
-int diff = Min - Max;
+// int diff = Min - Max;

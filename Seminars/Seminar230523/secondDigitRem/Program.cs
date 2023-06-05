@@ -6,6 +6,3 @@
 // 1 -> нет
 // 567,123 -> 57,123
 
-int num = new Random().Next();
-double r = Convert.ToDouble(x.Next(-10000, 10000)/10000.0);
-System.Console.WriteLine(r);
