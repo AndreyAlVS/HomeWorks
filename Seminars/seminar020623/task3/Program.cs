@@ -1,7 +1,54 @@
 ﻿// Задача 38: Задайте массив вещественных чисел. 
 // Найдите разницу между максимальным и минимальным элементов массива.
 
-// Задача HARD STAT необязательная: Задайте массив случайных целых чисел. 
-// Найдите максимальный элемент и его индекс, минимальный элемент и его индекс, среднее арифметическое всех элементов. 
-// Сохранить эту инфу в отдельный массив и вывести на экран с пояснениями. 
-// Найти медианное значение первоначалального массива , возможно придется кое-что для этого дополнительно выполнить.
+
+void FillArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        array[i] = new Random().Next(0, 1000);
+}
+
+void PrintArray(int[] array)
+{
+    foreach (var item in array)
+        Console.Write($"{item} ");
+    System.Console.WriteLine();
+}
+
+int Min(int[] array)
+{
+    int minimum = array[0];
+    for (int i = 1; i < array.Length; i++)
+        if (array[i] < minimum)
+        {
+            minimum = array[i];
+        }    
+    System.Console.WriteLine($"минимальное значение массива равно: {minimum}");
+    return minimum;
+}
+
+int Max(int[] array)
+{
+    int maximum = array[0];
+    for (int i = 1; i < array.Length; i++)
+        if (array[i] > maximum)
+        {
+            maximum = array[i];
+        }
+    System.Console.WriteLine($"максимальное значение массива равно: {maximum}");
+    return maximum;
+}
+
+
+//     int diff = Max - Min;
+//     System.Console.WriteLine($"разница между максимальным и минимальным элементом массива равна: {difference}");
+
+
+
+Console.Clear();
+int[] array = new int[5];
+FillArray(array);
+PrintArray(array);
+Min(array);
+Max(array);
+

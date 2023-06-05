@@ -34,3 +34,4 @@ PrintArray(array);
 FindNum(array);
 System.Console.WriteLine(FindNum(array));
 
+
