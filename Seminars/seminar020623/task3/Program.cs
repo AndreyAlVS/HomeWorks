@@ -2,76 +2,102 @@
 // Найдите разницу между максимальным и минимальным элементов массива.
 
 
-void FillArray(int[] array)
+// void FillArray(double[] array)
+// {
+//     for (double i = 0; i < array.Length; i++)
+//         array[i] = new Random().Next(0, 1000);
+// }
+
+// void PrintArray(double[] array)
+// {
+//     foreach (var item in array)
+//         Console.Write($"{item} ");
+//     System.Console.WriteLine();
+// }
+
+// double Min(double[] array)
+// {
+//     double minimum = array[0];
+//     for (double i = 1; i < array.Length; i++)
+//         if (array[i] < minimum)
+//         {
+//             minimum = array[i];
+//         }
+//     System.Console.WriteLine($"минимальное значение массива равно: {minimum}");
+//     return minimum;
+//     }
+
+// double Max(double[] array)
+// {
+//     double maximum = array[0];
+//     for (double i = 1; i < array.Length; i++)
+//         if (array[i] > maximum)
+//         {
+//             maximum = array[i];
+//             System.Console.WriteLine($"максимальное значение массива равно: {maximum}");
+//         }
+//     return maximum;
+// }
+
+
+// double[] array = new double[5];
+// FillArray(array);
+// PrintArray(array);
+// Min(array);
+// Max(array);
+// double diff = Max(array) - Min(array);
+// System.Console.WriteLine($"разница между максимальным и минимальным элементом массива равна: {diff}");
+
+
+
+//DOUBLE
+
+
+void FillArray(double[] array)
 {
-    for (int i = 0; i < array.Length; i++)
+    for (double i = 0; i < array.Length; i++)
         array[i] = new Random().Next(0, 1000);
 }
 
-void PrintArray(int[] array)
+void PrintArray(double[] array)
 {
     foreach (var item in array)
         Console.Write($"{item} ");
     System.Console.WriteLine();
 }
 
-int Min(int[] array)
+double Min(double[] array)
 {
-    int minimum = array[0];
-    for (int i = 1; i < array.Length; i++)
+    double minimum = array[0];
+    for (double i = 1; i < array.Length; i++)
         if (array[i] < minimum)
         {
             minimum = array[i];
         }
     System.Console.WriteLine($"минимальное значение массива равно: {minimum}");
     return minimum;
-}
+    }
 
-int Max(int[] array)
+double Max(double[] array)
 {
-    int maximum = array[0];
-    for (int i = 1; i < array.Length; i++)
+    double maximum = array[0];
+    for (double i = 1; i < array.Length; i++)
         if (array[i] > maximum)
         {
             maximum = array[i];
+            System.Console.WriteLine($"максимальное значение массива равно: {maximum}");
         }
-    System.Console.WriteLine($"максимальное значение массива равно: {maximum}");
     return maximum;
 }
-// int diff = Max - Min;
-// System.Console.WriteLine($"разница между максимальным и минимальным элементом массива равна: {diff}");
 
-int[] array = new int[5];
+
+double[] array = new double[5];
 FillArray(array);
 PrintArray(array);
 Min(array);
 Max(array);
+double diff = Max(array) - Min(array);
+System.Console.WriteLine($"разница между максимальным и минимальным элементом массива равна: {diff}");
 
 
 
-
-
-
-// int Min(int[] array)
-// {
-//     int minimum = array[0];
-//     for (int i = 1; i < array.Length; i++)
-//         if (...)
-//         {
-//             ...;
-//         }
-//     return minimum;
-// }
-
-// int Max(int[] array)
-// {
-//     int maximum = array[0];
-//     for (int i = 1; i < array.Length; i++)
-//         if (...)
-//         {
-//             ...;
-//         }
-//     return maximum;
-// }
-
-// int diff = Min - Max;
