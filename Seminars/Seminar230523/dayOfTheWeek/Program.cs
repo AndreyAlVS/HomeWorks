@@ -9,7 +9,8 @@ int x1 = int.Parse(System.Console.ReadLine()!);
 
 if (x1 == 1 || x1 == 2 || x1 == 3 || x1 == 4 || x1 == 5)
 {
-    System.Console.WriteLine("Нет");
+    Console.WriteLine("Нет");
 }
 else
-    System.Console.WriteLine("Да");
+   Console.WriteLine("Да");
+   

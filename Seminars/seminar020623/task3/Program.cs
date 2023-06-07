@@ -11,7 +11,7 @@ void FillArray(double[] array)
 void PrintArray(double[] array)
 {
     foreach (var item in array)
-        Console.Write($"{item} ");
+        Console.Write($"{Math.Round(item, 1)} ");
     System.Console.WriteLine();
     System.Console.WriteLine();
 }
@@ -24,9 +24,7 @@ double Min(double[] array)
         {
             minimum = array[i];
         }
-    minimum = Math.Round(minimum, 1, MidpointRounding.ToEven);
-    System.Console.WriteLine($"минимальное значение массива равно: {minimum}");
-    return minimum;
+    return Math.Round(minimum, 1, MidpointRounding.ToEven);
 }
 
 double Max(double[] array)
@@ -37,8 +35,6 @@ double Max(double[] array)
         {
             maximum = array[i];
         }
-    maximum = Math.Round(maximum, 1, MidpointRounding.ToEven);
-    System.Console.WriteLine($"максимальное значение массива равно: {maximum}");
     return maximum;
 }
 
@@ -46,11 +42,9 @@ double Max(double[] array)
 double[] array = new double[5];
 FillArray(array);
 PrintArray(array);
-Min(array);
-Max(array);
-double diff = Max(array) - Min(array);
-diff = Math.Round(diff, 1, MidpointRounding.ToEven);
-System.Console.WriteLine($"разница между максимальным и минимальным элементом массива равна: {diff}");
+System.Console.WriteLine($"минимальное значение массива равно: {Min(array)}");
+System.Console.WriteLine($"максимальное значение массива равно: {Max(array):f1}");
+System.Console.WriteLine($"разница между максимальным и минимальным элементом массива равна: {Max(array) - Min(array):f1}");
 
 
 
