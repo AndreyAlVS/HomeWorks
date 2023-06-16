@@ -49,7 +49,7 @@ void IndexOf(int[,] array, int num)
 }
 
 
-Console.Clear();
+
 System.Console.WriteLine("Введите количество строк ");
 int rows = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine("Введите количество столбцов ");
