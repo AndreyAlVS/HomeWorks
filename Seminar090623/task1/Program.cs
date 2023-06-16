@@ -8,12 +8,6 @@
 
 // 8 7,8 -7,1 9
 
-﻿// Задача 46: Задайте двумерный массив размером rows×cols, заполненный 
-//случайными целыми числами.
-// rows = 3, cols = 4.
-// 1 4 8 19
-// 5 -2 33 -2
-// 77 3 8 1
 
 void FillArray(double[,] array)
 {
@@ -21,6 +15,7 @@ void FillArray(double[,] array)
         for (int j = 0; j < array.GetLength(1); j++)
             array[i, j] = new Random().NextDouble() * 1000;
 }
+
 
 void PrintArray(double[,] array)
 {
@@ -31,8 +26,6 @@ void PrintArray(double[,] array)
         System.Console.WriteLine();
     }
 }
-
-
 
 
 Console.Clear();

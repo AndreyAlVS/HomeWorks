@@ -1,4 +1,5 @@
-﻿// Задача 50. Напишите программу, которая на вход принимает значение элемента в двумерном массиве, и возвращает позицию этого элемента или же указание, что такого элемента нет.
+﻿// Задача 50. Напишите программу, которая на вход принимает значение элемента в двумерном массиве, 
+// и возвращает позицию этого элемента или же указание, что такого элемента нет.
 
 // Например, задан массив:
 
@@ -27,20 +28,25 @@ void PrintArray(int[,] array)
     }
 }
 
-int IndexOf(int[,] array, int num)
+
+void IndexOf(int[,] array, int num)
 {
-    int sum = 0;
+    int count = 0;
+
     for (int i = 0; i < array.GetLength(0); i++)
+    {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            if (j == array[i, j])
-            sum = sum + array[i, j];
-            sum = sum/array.GetLength(0);
-
+            if (array[i, j] == num)
+            {
+                System.Console.WriteLine($"Координата числа {num}: {i}, {j}");
+                count++;
+            }
         }
-return sum;
+    }
+    if (count == 0)
+        System.Console.WriteLine($"Искомое число {num} отсутствует в массиве.");
 }
-
 
 
 Console.Clear();
