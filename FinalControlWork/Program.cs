@@ -18,11 +18,26 @@ void ReducedArr(string[] array1, string[] array2)
     Console.WriteLine(($"Отредактированный массив: [{string.Join(", ", array2)}]"));
 }
 
+int Array2Length(string[] array1)
+{
+    int count = 0;
+    for (int i = 0; i < array1.Length; i++)
+    {
+        if (array1[i].Length <= 3)
+        {
+            count++;
+        }
+    }
+    return count;
+}
+
 Console.Clear();
 string[] array1 = new string[9] {"I", "will", "pass", "the", "final", "test", "with", "excellent", "marks" };
 Console.WriteLine($"Начальный массив: [{string.Join(", ", array1)}]");
-string[] array2 = new string[array1.Length];
+string[] array2 = new string[Array2Length(array1)];
 ReducedArr(array1, array2);
+
+
 
 
 
